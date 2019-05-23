@@ -1,0 +1,1070 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<title>Title</title>
+    <meta property="og:title" content="" /> 
+    <meta property="og:description" content="" />
+    <meta name="title" content="" /> 
+    <meta name="description" content="" /> 
+    <link href="https://fonts.googleapis.com/css?family=Marmelad|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
+	<link href="css/slick.css" rel="stylesheet">
+	<link href="css/jquery.fancybox.min.css" rel="stylesheet">
+	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="webfonts/fonts.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">
+	<link href=”images/favicon.ico” rel=”shortcut icon” type=”image/x-icon”>
+	<link rel="shortcut icon" href="#">
+	<link rel="shortcut icon" href="images/favicon.png" type="image/png" />	
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+
+
+
+<!-- modal-callback -->
+<div class="modal b-modal fade" id="modal-callback" tabindex="-1" role="dialog" aria-labelledby="modal-callback" aria-hidden="true">
+  <div class="modal-dialog">
+		<button data-dismiss="modal" class="modal-close"></button>
+		<div class="b-modal-title">
+			<span>Обратный звонок</span>
+		</div>
+		<div class="b-modal-form">
+		<form class="" action="">
+			<input class="b-input-text b-input-tel" name="phone" type="text" placeholder="Номер телефона">           
+			<div class="b-checkbox">
+				<input type="checkbox" checked id="n1" name="n4" />
+				<label for="n1"><span></span><i>Согласен с обработкой персональных данных</i></label>  
+			</div>
+			<input class="b-input-btn" type="submit" value="Отправить">
+		</form>
+		</div>
+    </div>
+  </div>
+
+
+
+<div class="b-container">
+	<!-- begin b-header -->
+	<header class="b-header">
+		<div class="b-header-top">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-xl">
+						<div class="b-header-top__wrap">
+							<div class="b-nav-wrap">
+								<div class="b-nav">
+									<ul>
+										<li><a href="">О салоне</a></li>
+										<li><a href="">Как заказать</a></li>
+										<li><a href="">Оплата</a></li>
+										<li><a href="">Доставка</a></li>
+										<li><a href="">Контакты</a></li>
+										<li class="b-nav-sale"><a href="">Акции</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="b-header-top__wrapper">
+								<select class="b-city">
+									<option value="">Красноярск</option>
+									<option value="">Красноярск</option>
+									<option value="">Красноярск</option>
+								</select>
+								<div class="phone">
+									<div class="phone-top">
+										<a href="tel:(391) 29-29-456">(391) 29-29-456</a>
+										<div class="phone-top__ico"></div>
+									</div>
+									<div class="phone-drop phone-drop1">
+										<ul>
+											<li><a href="">(391) 29-29-456</a></li>
+											<li><a href="">(391) 29-29-456</a></li>
+											<li><a href="">(391) 29-29-456</a></li>
+										</ul>
+									</div>
+								</div>	
+								<div class="b-header-cart">
+									<div class="b-header-cart__ico">
+										<div class="b-header-cart__n">2</div>
+									</div>
+								</div>						
+								<div class="b-search">
+									<input class="b-search-input" type="text" placeholder="Поиск">
+									<input class="b-search-btn" type="submit" value="">
+								</div>
+								<div class="b-mobile">
+								    <div class="menu-icon">
+								        <div class="menu-icon__wrapper">
+								            <span class="b-menu__icon">
+								                <i class="b-menu__line b-menu__line_1"></i>
+								                <i class="b-menu__line b-menu__line_2"></i>
+								                <i class="b-menu__line b-menu__line_3"></i>
+								            </span>
+								        </div>
+								    </div> 
+								</div>																
+							</div>
+							<div class="b-header-top__right">
+								<div class="b-header-time">
+									<p>Режим работы: <span>с 9:00 до 22:00</span></p>
+								</div>
+								<div class="b-search">
+									<input class="b-search-input" type="text" placeholder="Поиск">
+									<input class="b-search-btn" type="submit" value="">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="b-header-content">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-xl">
+						<div class="b-header-content__wrap">
+							<div class="b-header-left">
+								<a href="" class="b-logo">
+									<img src="images/logo.png" alt="">
+								</a>
+								<span>Доставка цветов по Красноярску</span>
+							</div>
+							<div class="b-header-right">
+								<div class="b-phone">
+									<a href="tel:" class="b-phone-item">
+										<span>+7(391)</span>
+										29-29-456
+									</a>
+									<div class="b-phone-item__arrow"></div>
+									<div class="b-phone-item__ico" data-toggle="modal" data-target="#modal-callback"></div>
+									<div class="phone-drop phone-drop2">
+										<ul>
+											<li><a href="">(391) 29-29-456</a></li>
+											<li><a href="">(391) 29-29-456</a></li>
+											<li><a href="">(391) 29-29-456</a></li>
+										</ul>
+									</div>									
+								</div>
+								<div class="b-header-delivery">
+									<div class="b-header-delivery__ico"></div>
+									<div class="b-header-delivery__right">
+										<span>Доставка в: </span>
+										<select class="b-header-delivery-select">
+											<option value="">Красноярск</option>
+											<option value="">Красноярск</option>
+											<option value="">Красноярск</option>
+											<option value="">Красноярск</option>
+										</select>
+									</div>
+								</div>
+								<div class="b-header-cart">
+									<div class="b-header-cart__left">
+										<span>товаров</span>
+										<b>5 428 руб</b>
+									</div>
+									<div class="b-header-cart__ico">
+										<div class="b-header-cart__n">99</div>
+									</div>
+								</div>
+							</div>
+							<div class="b-mobile">
+							    <div class="menu-icon">
+							        <div class="menu-icon__wrapper">
+							            <span class="b-menu__icon">
+							                <i class="b-menu__line b-menu__line_1"></i>
+							                <i class="b-menu__line b-menu__line_2"></i>
+							                <i class="b-menu__line b-menu__line_3"></i>
+							            </span>
+							        </div>
+							    </div> 
+							</div>							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- end b-header -->
+
+	<!-- begin b-main -->
+	<section class="b-main">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xl">
+					<div class="b-main-content">
+						<div class="b-main-slider">
+							<div class="b-main-slider__item" style="background: url(images/main-img.jpg);">
+								<div class="b-main-slider__block">
+									<div class="b-main-slider__nav">
+										<button class="b-main-arrow b-main-prev"></button>
+										<button class="b-main-arrow b-main-next"></button>
+									</div>
+									<div class="b-main-slider__block__wrap">
+										<h1 class="b-main-title">Букеты на 
+										8 марта</h1>
+										<p>Праздничные предложения для 
+										дорогих женщин с наилучшим 
+										выбором букетов </p>
+									</div>
+									<div class="b-main-link__wrap">
+										<a href="" class="b-main-link"></a>
+									</div>
+								</div>
+							</div>
+							<div class="b-main-slider__item" style="background: url(images/main-img.jpg);">
+								<div class="b-main-slider__block">
+									<div class="b-main-slider__nav">
+										<button class="b-main-arrow b-main-prev"></button>
+										<button class="b-main-arrow b-main-next"></button>
+									</div>
+									<div class="b-main-slider__block__wrap">
+										<h1 class="b-main-title">Букеты на 
+										8 марта</h1>
+										<p>Праздничные предложения для 
+										дорогих женщин с наилучшим 
+										выбором букетов </p>
+									</div>
+									<div class="b-main-link__wrap">
+										<a href="" class="b-main-link"></a>
+									</div>
+								</div>
+							</div>
+							<div class="b-main-slider__item" style="background: url(images/main-img.jpg);">
+								<div class="b-main-slider__block">
+									<div class="b-main-slider__nav">
+										<button class="b-main-arrow b-main-prev"></button>
+										<button class="b-main-arrow b-main-next"></button>
+									</div>
+									<div class="b-main-slider__block__wrap">
+										<h1 class="b-main-title">Букеты на 
+										8 марта</h1>
+										<p>Праздничные предложения для 
+										дорогих женщин с наилучшим 
+										выбором букетов </p>
+									</div>
+									<div class="b-main-link__wrap">
+										<a href="" class="b-main-link"></a>
+									</div>									
+								</div>
+							</div>
+
+						</div>
+						<div class="b-main-right">
+							<div class="b-main-item">
+								<a class="b-main-item__link" href=""></a>
+								<div class="b-main-item__text">
+									<span>Хиты 
+									продаж</span>
+									<div class="b-main-link__wrap">
+										<a href="" class="b-main-link"></a>
+									</div>
+								</div>
+								<div class="b-main-link__img">
+									<img src="images/b-main-link__img.png" alt="">
+								</div>
+							</div>
+							<div class="b-main-item b-main-item__two">
+								<a class="b-main-item__link" href=""></a>
+								<div class="b-main-item__text">
+									<span>Весенние
+									букеты</span>
+									<div class="b-main-link__wrap">
+										<a href="" class="b-main-link"></a>
+									</div>
+								</div>
+								<div class="b-main-link__img">
+									<img src="images/b-main-link__img2.png" alt="">
+								</div>
+							</div>							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end b-main -->
+
+
+	<section class="b-content">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xl">
+					<div class="b-filters">
+						<select class="b-filters-select">
+							<option>Цена</option>
+							<option>Цена</option>
+							<option>Цена</option>
+						</select>
+						<select class="b-filters-select">
+							<option>Цветы</option>
+							<option>Цветы</option>
+							<option>Цветы</option>
+						</select>
+						<select class="b-filters-select b-filters-select__two" checked>
+							<option>Классика</option>
+							<option>Классика</option>
+						</select>
+						<select class="b-filters-select">
+							<option>Кому</option>
+							<option>Кому</option>
+							<option>Кому</option>
+						</select>	
+						<div class="b-filters-btns">
+							<button class="b-filters-btn btn-red">Искать</button>
+							<button class="btn-clear btn-white">Очистить</button>
+						</div>														
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xl-2 col-lg-3 col-md-4">
+					<div class="b-aside">
+						<div class="b-aside-nav">
+							<ul>
+								<li><a href=""><b>Все</b><span>275</span></a></li>
+								<li class="active"><a href=""><b>Букеты</b><span>132</span></a></li>
+								<li><a href=""><b>Хиты продаж</b><span>11</span></a></li>
+								<li><a href=""><b>Подарки</b><span>7</span></a></li>
+								<li><a href=""><b>Корзины</b><span>29</span></a></li>
+								<li><a href=""><b>Цветы в коробках</b><span>7</span></a></li>
+								<li><a href=""><b>Аренда растений</b><span>29</span></a></li>
+								<li><a href=""><b><strong class="b-aside-ico"></strong>Дни рождения</b><span>64</span></a></li>
+								<li><a href=""><b><strong class="b-aside-ico"></strong>14 февраля</b><span>23</span></a></li>
+								<li><a href=""><b><strong class="b-aside-ico"></strong>8 марта</b><span>23</span></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-10 col-lg-9 col-md-8">
+					<div class="b-products">
+						<div class="row">
+							<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+								<div class="b-product">
+									<div class="b-product-top">
+										<div class="b-product-block b-product-block__new">
+											новинка
+										</div>
+									</div>										
+									<div class="b-product-wrap">								
+										<div class="b-product-slider">
+											<div class="b-product-slider__item">
+												<img src="images/b-product-slider__img.png" alt="">
+											</div>
+											<div class="b-product-slider__item">
+												<img src="images/b-product-slider__img.png" alt="">
+											</div>
+											<div class="b-product-slider__item">
+												<img src="images/b-product-slider__img.png" alt="">
+											</div>																						
+										</div>
+									</div>
+									<div class="b-product-content">
+										<p>Розы Премиум 70-80см</p>
+										<span>7 524 руб </span>
+									</div>
+									<div class="b-product-bottom">
+										<button class="btn-product">Заказать</button>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+								<div class="b-product">
+									<div class="b-product-wrap">									
+										<div class="b-product-slider">
+											<div class="b-product-slider__item">
+												<img src="images/b-product-slider__img2.png" alt="">
+											</div>
+											<div class="b-product-slider__item">
+												<img src="images/b-product-slider__img2.png" alt="">
+											</div>
+											<div class="b-product-slider__item">
+												<img src="images/b-product-slider__img2.png" alt="">
+											</div>																						
+										</div>
+									</div>
+									<div class="b-product-content">
+										<p>Розы Премиум 70-80см</p>
+										<span>7 524 руб </span>
+									</div>
+									<div class="b-product-bottom">
+										<button class="btn-product">Заказать</button>
+									</div>									
+								</div>
+							</div>
+							<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+								<div class="b-product">
+									<div class="b-product-wrap">									
+										<div class="b-product-slider">
+											<div class="b-product-slider__item">
+												<img src="images/b-product-slider__img3.png" alt="">
+											</div>
+											<div class="b-product-slider__item">
+												<img src="images/b-product-slider__img3.png" alt="">
+											</div>
+											<div class="b-product-slider__item">
+												<img src="images/b-product-slider__img3.png" alt="">
+											</div>																						
+										</div>
+									</div>
+									<div class="b-product-content">
+										<p>Розы Премиум 70-80см</p>
+										<span>7 524 руб </span>
+									</div>
+									<div class="b-product-bottom">
+										<button class="btn-product">Заказать</button>
+									</div>									
+								</div>
+							</div>
+							<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+								<div class="b-product">
+									<div class="b-product-top">
+										<div class="b-product-block b-product-block__new">
+											новинка
+										</div>
+									</div>									
+									<div class="b-product-wrap">									
+										<div class="b-product-slider">
+											<div class="b-product-slider__item">
+												<img src="images/b-product-slider__img4.png" alt="">
+											</div>
+											<div class="b-product-slider__item">
+												<img src="images/b-product-slider__img4.png" alt="">
+											</div>
+											<div class="b-product-slider__item">
+												<img src="images/b-product-slider__img4.png" alt="">
+											</div>																						
+										</div>
+									</div>
+									<div class="b-product-content">
+										<p>Розы Премиум 70-80см</p>
+										<span>7 524 руб </span>
+									</div>
+									<div class="b-product-bottom">
+										<button class="btn-product">Заказать</button>
+									</div>									
+								</div>
+							</div>
+							<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+								<div class="b-product">
+									<div class="b-product-wrap">									
+										<div class="b-product-slider">
+											<div class="b-product-slider__item">
+												<img src="images/b-product-slider__img5.png" alt="">
+											</div>
+											<div class="b-product-slider__item">
+												<img src="images/b-product-slider__img5.png" alt="">
+											</div>
+											<div class="b-product-slider__item">
+												<img src="images/b-product-slider__img5.png" alt="">
+											</div>																						
+										</div>
+									</div>
+									<div class="b-product-content">
+										<p>Розы Премиум 70-80см</p>
+										<span>7 524 руб </span>
+									</div>
+									<div class="b-product-bottom">
+										<button class="btn-product">Заказать</button>
+									</div>									
+								</div>
+							</div>
+							<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+								<div class="b-product">
+									<div class="b-product-top">
+										<div class="b-product-block b-product-block__hit">
+											хит
+										</div>
+									</div>									
+									<div class="b-product-wrap">									
+										<div class="b-product-slider">
+											<div class="b-product-slider__item">
+												<img src="images/b-product-slider__img6.png" alt="">
+											</div>
+											<div class="b-product-slider__item">
+												<img src="images/b-product-slider__img6.png" alt="">
+											</div>
+											<div class="b-product-slider__item">
+												<img src="images/b-product-slider__img6.png" alt="">
+											</div>																						
+										</div>
+									</div>
+									<div class="b-product-content">
+										<p>Розы Премиум 70-80см</p>
+										<span>7 524 руб </span>
+									</div>
+									<div class="b-product-bottom">
+										<button class="btn-product">Заказать</button>
+									</div>									
+								</div>
+							</div>
+							<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+								<div class="b-product">
+									<div class="b-product-wrap">									
+										<div class="b-product-slider">
+											<div class="b-product-slider__item">
+												<img src="images/b-product-slider__img7.png" alt="">
+											</div>
+											<div class="b-product-slider__item">
+												<img src="images/b-product-slider__img7.png" alt="">
+											</div>
+											<div class="b-product-slider__item">
+												<img src="images/b-product-slider__img7.png" alt="">
+											</div>																						
+										</div>
+									</div>
+									<div class="b-product-content">
+										<p>Розы Премиум 70-80см</p>
+										<span>7 524 руб </span>
+									</div>
+									<div class="b-product-bottom">
+										<button class="btn-product">Заказать</button>
+									</div>									
+								</div>
+							</div>
+							<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+								<div class="b-product">
+									<div class="b-product-wrap">									
+										<div class="b-product-slider">
+											<div class="b-product-slider__item">
+												<img src="images/b-product-slider__img8.png" alt="">
+											</div>
+											<div class="b-product-slider__item">
+												<img src="images/b-product-slider__img8.png" alt="">
+											</div>
+											<div class="b-product-slider__item">
+												<img src="images/b-product-slider__img8.png" alt="">
+											</div>																						
+										</div>
+									</div>
+									<div class="b-product-content">
+										<p>Розы Премиум 70-80см</p>
+										<span>7 524 руб </span>
+									</div>
+									<div class="b-product-bottom">
+										<button class="btn-product">Заказать</button>
+									</div>									
+								</div>
+							</div>
+
+							<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+								<div class="b-product">
+									<div class="b-product-wrap">									
+										<div class="b-product-slider">
+											<div class="b-product-slider__item">
+												<img src="images/b-product-slider__img.png" alt="">
+											</div>
+											<div class="b-product-slider__item">
+												<img src="images/b-product-slider__img.png" alt="">
+											</div>
+											<div class="b-product-slider__item">
+												<img src="images/b-product-slider__img.png" alt="">
+											</div>																						
+										</div>
+									</div>
+									<div class="b-product-content">
+										<p>Розы Премиум 70-80см</p>
+										<span>7 524 руб </span>
+									</div>
+									<div class="b-product-bottom">
+										<button class="btn-product">Заказать</button>
+									</div>									
+								</div>
+							</div>
+							<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+								<div class="b-product">
+									<div class="b-product-wrap">									
+										<div class="b-product-slider">
+											<div class="b-product-slider__item">
+												<img src="images/b-product-slider__img2.png" alt="">
+											</div>
+											<div class="b-product-slider__item">
+												<img src="images/b-product-slider__img2.png" alt="">
+											</div>
+											<div class="b-product-slider__item">
+												<img src="images/b-product-slider__img2.png" alt="">
+											</div>																						
+										</div>
+									</div>
+									<div class="b-product-content">
+										<p>Розы Премиум 70-80см</p>
+										<span>7 524 руб </span>
+									</div>
+									<div class="b-product-bottom">
+										<button class="btn-product">Заказать</button>
+									</div>									
+								</div>
+							</div>
+							<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+								<div class="b-product">
+									<div class="b-product-top">
+										<div class="b-product-block b-product-block__sale">
+											Распродажа
+										</div>
+									</div>										
+									<div class="b-product-wrap">																		
+										<div class="b-product-slider">
+											<div class="b-product-slider__item">
+												<img src="images/b-product-slider__img3.png" alt="">
+											</div>
+											<div class="b-product-slider__item">
+												<img src="images/b-product-slider__img3.png" alt="">
+											</div>
+											<div class="b-product-slider__item">
+												<img src="images/b-product-slider__img3.png" alt="">
+											</div>																						
+										</div>
+									</div>
+									<div class="b-product-content">
+										<p>Розы Премиум 70-80см</p>
+										<span>7 524 руб </span>
+									</div>
+									<div class="b-product-bottom">
+										<button class="btn-product">Заказать</button>
+									</div>									
+								</div>
+							</div>
+							<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+								<div class="b-product">
+									<div class="b-product-wrap">
+										<div class="b-product-slider">
+											<div class="b-product-slider__item">
+												<img src="images/b-product-slider__img4.png" alt="">
+											</div>
+											<div class="b-product-slider__item">
+												<img src="images/b-product-slider__img4.png" alt="">
+											</div>
+											<div class="b-product-slider__item">
+												<img src="images/b-product-slider__img4.png" alt="">
+											</div>																						
+										</div>
+									</div>
+									<div class="b-product-content">
+										<p>Розы Премиум 70-80см</p>
+										<span>7 524 руб </span>
+									</div>
+									<div class="b-product-bottom">
+										<button class="btn-product">Заказать</button>
+									</div>									
+								</div>
+							</div>
+
+						</div>
+					</div>
+					<div class="b-products-btns">
+						<button class="btn-load btn-white">Загрузить еще</button>
+						<button class="btn-catalog btn-red">Перейти в каталог</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	
+	<div class="b-wrap">
+		<section class="b-reviews">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-xl">
+						<div class="b-reviews-top">
+							<div class="b-title">
+								<h2 class="b-title-item">Отзывы</h2>
+							</div>
+							<div class="b-reviews-right">
+								<button class="btn-reviews btn-red">Все отзывы</button>
+								<div class="b-reviews-nav">
+									<button class="b-reviews-arrow b-reviews-prev"></button>
+									<b>4-6 из  54</b>
+									<button class="b-reviews-arrow b-reviews-next"></button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="b-reviews-slider">
+					<div class="row">
+						<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 b-reviews-col">
+							<div class="b-reviews-item">
+								<div class="b-reviews-item__left">
+									<div class="b-reviews-item__img">
+										<img src="images/b-reviews-item__img.jpg" alt="">
+									</div>
+									<span>Светлана</span>
+								</div>
+								<div class="b-reviews-item__right">
+									<span>Директор  “Название” </span>
+									<p>А мне доставили обалденный букет, причем неожиданно, уточнили где я нахожусь, подождали, и всё это с улыбкой и поздравлением! Очень приятно, молодцы! Удачи вам и процветания!</p>
+									<button class="btn-read">читать далее</button>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 b-reviews-col">
+							<div class="b-reviews-item">
+								<div class="b-reviews-item__left">
+									<div class="b-reviews-item__img">
+										<img src="images/b-reviews-item__img.jpg" alt="">
+									</div>
+									<span>Светлана</span>
+								</div>
+								<div class="b-reviews-item__right">
+									<span>Директор  “Название” </span>
+									<p>А мне доставили обалденный букет, причем неожиданно, уточнили где я нахожусь, подождали, и всё это с улыбкой и поздравлением! Очень приятно, молодцы! Удачи вам и процветания!</p>
+									<button class="btn-read">читать далее</button>
+								</div>
+							</div>
+						</div>					
+						<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 b-reviews-col">
+							<div class="b-reviews-item">
+								<div class="b-reviews-item__left">
+									<div class="b-reviews-item__img">
+										<img src="images/b-reviews-item__img2.jpg" alt="">
+									</div>
+									<span>Игорь</span>
+								</div>
+								<div class="b-reviews-item__right">
+									<span>PR-менеджер  “Название” </span>
+									<p>Увидел объявление, решил заехать. В выборе не ошибся, помогли выбрать цветы и составили хороший букет... Про интерьер просто молчу, так как красиво там. Советую всем заехать и убедиться в моих словах! Про интерьер просто молчу, так как красиво там. Советую всем заехать и убедиться в моих словах!</p>
+									<button class="btn-read">свернуть</button>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 b-reviews-col">
+							<div class="b-reviews-item">
+								<div class="b-reviews-item__left">
+									<div class="b-reviews-item__img">
+										<img src="images/b-reviews-item__img.jpg" alt="">
+									</div>
+									<span>Светлана</span>
+								</div>
+								<div class="b-reviews-item__right">
+									<span>Директор  “Название” </span>
+									<p>А мне доставили обалденный букет, причем неожиданно, уточнили где я нахожусь, подождали, и всё это с улыбкой и поздравлением! Очень приятно, молодцы! Удачи вам и процветания!</p>
+									<button class="btn-read">читать далее</button>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 b-reviews-col">
+							<div class="b-reviews-item">
+								<div class="b-reviews-item__left">
+									<div class="b-reviews-item__img">
+										<img src="images/b-reviews-item__img.jpg" alt="">
+									</div>
+									<span>Светлана</span>
+								</div>
+								<div class="b-reviews-item__right">
+									<span>Директор  “Название” </span>
+									<p>А мне доставили обалденный букет, причем неожиданно, уточнили где я нахожусь, подождали, и всё это с улыбкой и поздравлением! Очень приятно, молодцы! Удачи вам и процветания!</p>
+									<button class="btn-read">читать далее</button>
+								</div>
+							</div>
+						</div>					
+						<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 b-reviews-col">
+							<div class="b-reviews-item">
+								<div class="b-reviews-item__left">
+									<div class="b-reviews-item__img">
+										<img src="images/b-reviews-item__img2.jpg" alt="">
+									</div>
+									<span>Игорь</span>
+								</div>
+								<div class="b-reviews-item__right">
+									<span>PR-менеджер  “Название” </span>
+									<p>Увидел объявление, решил заехать. В выборе не ошибся, помогли выбрать цветы и составили хороший букет... Про интерьер просто молчу, так как красиво там. Советую всем заехать и убедиться в моих словах! Про интерьер просто молчу, так как красиво там. Советую всем заехать и убедиться в моих словах!</p>
+									<button class="btn-read">свернуть</button>
+								</div>
+							</div>
+						</div>					
+
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="b-advantages">
+			<div class="container">
+				<div class="row">
+					<div class="col-xl">
+						<div class="b-advantages-content">
+							<div class="b-advantages-left">
+								<div class="b-title">
+									<h2 class="b-title-item">Чем мы лучше других</h2>
+									<button class="btn-about btn-red">О салоне</button>
+								</div>
+							</div>
+							<div class="b-advantages-right">
+								<div class="b-advantages-item">
+									<div class="b-advantages-item__img">
+										<img src="images/b-advantages-item__img.svg" alt="">
+									</div>
+									<div class="b-advantages-item__text">
+										<p>Быстрая <br/>
+										доставка
+										</p>
+									</div>
+								</div>
+								<div class="b-advantages-item">
+									<div class="b-advantages-item__img">
+										<img src="images/b-advantages-item__img2.svg" alt="">
+									</div>
+									<div class="b-advantages-item__text">
+										<p>Всегда <br/>
+										свежие цветы</p>
+									</div>
+								</div>
+								<div class="b-advantages-item">
+									<div class="b-advantages-item__img">
+										<img src="images/b-advantages-item__img3.svg" alt="">
+									</div>
+									<div class="b-advantages-item__text">
+										<p>Букет на <br/>
+										любой вкус</p>
+									</div>
+								</div>
+								<div class="b-advantages-item">
+									<div class="b-advantages-item__img">
+										<img src="images/b-advantages-item__img4.svg" alt="">
+									</div>
+									<div class="b-advantages-item__text">
+										<p>Филиалы по <br/>
+										всему городу</p>
+									</div>
+								</div>																								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<section class="b-foto">
+		<div class="container">
+			<div class="row">
+				<div class="col-xl">
+					<div class="b-foto-top">
+						<div class="b-foto-top__left">
+							<div class="b-title">
+								<h2 class="b-title-item">Фото из Instagram</h2>
+							</div>
+							<div class="b-insta-item">
+								<div class="b-insta-item__ico"></div>
+								<a href="">#сакурыветка</a>
+							</div>
+						</div>
+						<button class="btn-sub btn-red">Подписаться на Insagram</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="b-foto-content">
+			<a href="" class="b-foto-item">
+				<img src="images/b-foto-img.jpg" alt="">
+			</a>
+			<a href="" class="b-foto-item">
+				<img src="images/b-foto-img2.jpg" alt="">
+			</a>
+			<a href="" class="b-foto-item">
+				<img src="images/b-foto-img3.jpg" alt="">
+			</a>	
+			<a href="" class="b-foto-item">
+				<img src="images/b-foto-img4.jpg" alt="">
+			</a>
+			<a href="" class="b-foto-item">
+				<img src="images/b-foto-img5.jpg" alt="">
+			</a>
+			<a href="" class="b-foto-item">
+				<img src="images/b-foto-img6.jpg" alt="">
+			</a>									
+		</div>
+	</section>
+
+	<section class="b-delivery">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xl">
+					<div class="b-delivery-content">
+						<div class="b-delivery-text">
+							<div class="b-title">
+								<h2 class="b-title-item">Доставка цветов по Красноярску</h2>
+							</div>
+							<p><b>Компания Ветка Сакуры - служба доставки цветов и подарков Вашим близким в Красноярске. </b></p>
+							<p>Мы работаем с лучшими поставщиками и предлагаем композиции только из свежих цветов, которые находятся на складе не более трех дней.   <a class="b-delivery-link" href="">В каталог</a></p>
+							<p>Наши менеджеры всегда помогут Вам с выбором. Оформить заказ или получить консультацию Вы можете через сайт, онлайн-консультанта, по телефону или почту. Также Вы можете заказать обратный звонок, и наши менеджеры перезвонят Вам через 5-15 минут.  <a class="b-delivery-link" href="">Заказать звонок</a></p>
+							<p><b>Основная цель нашей компании - помогать Вам делать Ваших близких счастливее.</b></p>
+						</div>
+						<div class="b-delivery-right">
+							<div class="b-delivery-item">
+								<div class="b-delivery-item__img">
+									<img src="images/b-advantages-item__img.svg" alt="">
+								</div>
+								<div class="b-delivery-item__text">
+									<p><b>Оперативная доставка </b>
+									по Красноярску от 
+									нескольких часов.</p>
+								</div>
+							</div>
+							<div class="b-delivery-item">
+								<div class="b-delivery-item__img">
+									<img src="images/b-delivery-item__img2.svg" alt="">
+								</div>
+								<div class="b-delivery-item__text">
+									<p><b>Заказ Вы можете 
+									оплатить картой.</b></p>
+								</div>
+							</div>
+							<div class="b-delivery-item">
+								<div class="b-delivery-item__img">
+									<img src="images/b-advantages-item__img2.svg" alt="">
+								</div>
+								<div class="b-delivery-item__text">
+									<p><b>Свежесть цветов.</b> Наши 
+									цветы не лежат на полках 
+									салонов по несколько 
+									недель, а обрабатываются 
+									перед доставкой.
+									</p>
+								</div>
+							</div>
+							<div class="b-delivery-item">
+								<div class="b-delivery-item__img">
+									<img src="images/b-delivery-item__img4.svg" alt="">
+								</div>
+								<div class="b-delivery-item__text">
+									<p><b>Мы ценим каждого 
+									клиента. </b>Не важно, что вы 
+									хотите заказать - 101 розу 
+									или небольшой букет - Вы 
+									всегда получите 
+									качественный сервис.</p>
+								</div>
+							</div>																		
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+	<!-- begin b-footer -->
+	<footer class="b-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-xl">
+					<div class="b-footer-content">
+						<div class="b-footer-left">
+							<div class="b-footer-list">
+								<b class="b-footer-title">Каталог букетов</b>
+								<ul>
+									<li><a href="">Букеты</a></li>
+									<li><a href="">Хиты продаж</a></li>
+									<li><a href="">Подарочные корзины</a></li>
+									<li><a href="">Цветы в коробках</a></li>
+									<li><a href="">Аренда растений</a></li>
+									<li><a href="">Акции</a></li>
+								</ul>
+							</div>
+							<div class="b-footer-list">
+								<b class="b-footer-title">О компании</b>
+								<ul>
+									<li><a href="">Отзывы</a></li>
+									<li><a href="">Фотогалерея</a></li>
+									<li><a href="">Награды и благодарности</a></li>
+									<li><a href="">Партнеры</a></li>
+									<li><a href="">Информация для размещения</a></li>
+									<li><a href="">Реквизиты</a></li>
+									<li><a href="">Персональные данные</a></li>
+								</ul>
+							</div>
+							<div class="b-footer-list">
+								<b class="b-footer-title">Покупателям</b>
+								<ul>
+									<li><a href="">Как заказать</a></li>
+									<li><a href="">Оплата</a></li>
+									<li><a href="">Доставка</a></li>
+									<li><a href="">Как оплатить VISA, Mastercard</a></li>
+									<li><a href="">Отмена заказа</a></li>
+									<li><a href="">Промо-коды</a></li>
+									<li><a href="">Корпоративным клиентам</a></li>
+								</ul>
+							</div>
+							<div class="b-footer-list">
+								<b class="b-footer-title"></b>
+								<ul>
+									<li><a href="">События</a></li>
+									<li><a href="">Полезное</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="b-footer-right">
+							<div class="b-footer-contacts">
+								<b class="b-footer-title">Контакты</b>
+								<div class="b-footer-contacts__item">
+									<div class="b-footer-contacts__item__ico"><img src="images/tel-ico.png" alt=""></div>
+									<div class="b-footer-contacts__item__text">
+										<a href="">(391) 29-29-456</a>
+										<a href="">(391) 29-45-205</a>
+										<a href="">(391) 251-81-51</a>
+									</div>
+								</div>
+								<button class="btn-callback btn-red" data-toggle="modal" data-target="#modal-callback">Обратный звонок</button>
+							</div>
+							<div class="b-footer-wrap">
+								<div class="b-footer-block">
+									<div class="b-footer-block__img">
+										<img src="images/b-footer-block__img.png" alt="">
+									</div>
+									<div class="b-footer-block__text">
+										<p>Пер. Сибирский, 5А</p>
+										<p>Пер. Сибирский, 5А</p>
+										<p>Аэропорт Емельяново 
+										Терминал 3 (зона прибытия)</p>
+									</div>
+								</div>
+								<div class="b-footer-block">
+									<div class="b-footer-block__img">
+										<img src="images/b-footer-block__img2.png" alt="">
+									</div>
+									<div class="b-footer-block__text">
+										<p><b>с 9:00 до 22:00 </b></p>
+									</div>
+								</div>							
+							</div>
+						</div>						
+					</div>
+					<div class="b-footer-bottom">
+						<ul>
+							<li><img src="images/rbk.png" alt=""></li>
+							<li><img src="images/mastercard.png" alt=""></li>
+							<li><img src="images/visa.png" alt=""></li>
+						</ul>
+						<p>Заказать букет, заказ цветов, Цветы в Красноярске, Букет цветов, Розы в Красноярске</p>
+						<p>Ветка Сакуры - Салон флористики 2017-2019 г.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- end b-footer -->
+</div>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBv9-H5GwlZA4EkUorU0gGHrq0H4pFMPS4"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/jquery.fancybox.min.js"></script>
+	<script src="js/jquery.validate.min.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
