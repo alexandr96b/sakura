@@ -305,7 +305,7 @@ function init() {
         map: map,
         title: 'Snazzy!',
                 icon: {
-                    url: "images/pin.svg",
+                    url: "images/pin.png",
                     scaledSize: new google.maps.Size(57, 68),
                     labelOrigin: new google.maps.Point(145, 25, 5),
                     origin: new google.maps.Point(0, 0),
@@ -317,11 +317,57 @@ function init() {
 }
 
 
+ $('.b-quantity .minus').click(function() {
+    var $input = $(this).parent().find('input');
+    var count = parseInt($input.val()) - 1;
+    count = count < 1 ? 1 : count;
+    $input.val(count);
+    $input.change();
+    return false;
+});
+$('.b-quantity .plus').click(function() {
+    var $input = $(this).parent().find('input');
+    $input.val(parseInt($input.val()) + 1);
+    $input.change();
+    return false;
+}); 
 
 
 
-
-
+$('.b-products-slider .row').slick({
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  arrows: true,
+  dots: false,
+  focusOnSelect: true,
+  variableWidth: false,
+  responsive: [
+    {
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 4,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 4,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
 
 
 
