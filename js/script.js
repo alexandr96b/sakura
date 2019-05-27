@@ -369,6 +369,8 @@ $('.b-products-slider .row').slick({
   ]
 });
 
+$( "#datepicker" ).datepicker();
+
 
 
 $(".b-main-left__bottom a").click(function (event) {
