@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<title>Title</title>
+    <meta property="og:title" content="" /> 
+    <meta property="og:description" content="" />
+    <meta name="title" content="" /> 
+    <meta name="description" content="" /> 
+    <link href="https://fonts.googleapis.com/css?family=Marmelad|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
+	<link href="css/slick.css" rel="stylesheet">
+	<link href="css/jquery-ui.css" rel="stylesheet">
+	<link href="css/fontawesome-all.css" rel="stylesheet">
+	<link href="css/jquery.fancybox.min.css" rel="stylesheet">
+	<link href="css/jquery.formstyler.css" rel="stylesheet">
+	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="webfonts/fonts.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">
+	<link href=”images/favicon.ico” rel=”shortcut icon” type=”image/x-icon”>
+	<link rel="shortcut icon" href="#">
+	<link rel="shortcut icon" href="images/favicon.png" type="image/png" />	
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+
+
+
+<!-- modal-callback -->
+<div class="modal b-modal fade" id="modal-callback" tabindex="-1" role="dialog" aria-labelledby="modal-callback" aria-hidden="true">
+  <div class="modal-dialog">
+		<button data-dismiss="modal" class="modal-close"></button>
+		<div class="b-modal-title">
+			<span>Обратный звонок</span>
+		</div>
+		<div class="b-modal-form">
+		<form class="" action="">
+			<input class="b-input-text b-input-tel" name="phone" type="text" placeholder="Номер телефона">           
+			<div class="b-checkbox">
+				<input type="checkbox" checked id="n1" name="n4" />
+				<label for="n1"><span></span><i>Согласен с обработкой персональных данных</i></label>  
+			</div>
+			<input class="b-input-btn" type="submit" value="Отправить">
+		</form>
+		</div>
+    </div>
+  </div>
+
+
+<!-- modal-one -->
+<div class="modal b-modal fade" id="modal-one" tabindex="-1" role="dialog" aria-labelledby="modal-one" aria-hidden="true">
+  <div class="modal-dialog">
+		<button data-dismiss="modal" class="modal-close"></button>
+		<div class="b-modal-title">
+			<span>Быстрый заказ</span>
+			<p>Пожалуйста, введите ваш номер телефона и 
+			мы свяжемся с Вами в течение нескольких 
+			минут.</p>
+		</div>
+		<div class="b-modal-form">
+		<form class="" action="">
+			<input class="b-input-text b-input-tel" name="phone" type="text" placeholder="Номер телефона">           
+			<div class="b-checkbox">
+				<input type="checkbox" checked id="n2" name="n4" />
+				<label for="n2"><span></span><i>Согласен с обработкой персональных данных</i></label>  
+			</div>
+			<input class="b-input-btn" type="submit" value="Отправить">
+		</form>
+		</div>
+    </div>
+  </div>
+
+
+
+<div class="b-container">
+	<!-- begin b-header -->
+	<header class="b-header">
+		<div class="b-header-top">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-xl">
+						<div class="b-header-top__wrap">
+							<div class="b-nav-wrap">
+								<div class="b-nav">
+									<ul>
+										<li><a href="">О салоне</a></li>
+										<li><a href="">Как заказать</a></li>
+										<li><a href="">Оплата</a></li>
+										<li><a href="">Доставка</a></li>
+										<li><a href="">Контакты</a></li>
+										<li class="b-nav-sale"><a href="">Акции</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="b-header-top__wrapper">
+								<select class="b-city">
+									<option value="">Красноярск</option>
+									<option value="">Красноярск</option>
+									<option value="">Красноярск</option>
+								</select>
+								<div class="phone">
+									<div class="phone-top">
+										<a href="tel:(391) 29-29-456">(391) 29-29-456</a>
+										<div class="phone-top__ico"></div>
+									</div>
+									<div class="phone-drop phone-drop1">
+										<ul>
+											<li><a href="">(391) 29-29-456</a></li>
+											<li><a href="">(391) 29-29-456</a></li>
+											<li><a href="">(391) 29-29-456</a></li>
+										</ul>
+									</div>
+								</div>	
+								<div class="b-header-cart">
+									<div class="b-header-cart__ico">
+										<div class="b-header-cart__n">2</div>
+									</div>
+								</div>						
+								<div class="b-search">
+									<input class="b-search-input" type="text" placeholder="Поиск">
+									<input class="b-search-btn" type="submit" value="">
+								</div>
+								<div class="b-mobile">
+								    <div class="menu-icon">
+								        <div class="menu-icon__wrapper">
+								            <span class="b-menu__icon">
+								                <i class="b-menu__line b-menu__line_1"></i>
+								                <i class="b-menu__line b-menu__line_2"></i>
+								                <i class="b-menu__line b-menu__line_3"></i>
+								            </span>
+								        </div>
+								    </div> 
+								</div>																
+							</div>
+							<div class="b-header-top__right">
+								<div class="b-header-time">
+									<p>Режим работы: <span>с 9:00 до 22:00</span></p>
+								</div>
+								<div class="b-search">
+									<input class="b-search-input" type="text" placeholder="Поиск">
+									<input class="b-search-btn" type="submit" value="">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="b-header-content">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-xl">
+						<div class="b-header-content__wrap">
+							<div class="b-header-left">
+								<a href="" class="b-logo">
+									<img src="images/logo.png" alt="">
+								</a>
+								<span>Доставка цветов по Красноярску</span>
+							</div>
+							<div class="b-header-right">
+								<div class="b-phone">
+									<a href="tel:" class="b-phone-item">
+										<span>+7(391)</span>
+										29-29-456
+									</a>
+									<div class="b-phone-item__arrow"></div>
+									<div class="b-phone-item__ico" data-toggle="modal" data-target="#modal-callback"></div>
+									<div class="phone-drop phone-drop2">
+										<ul>
+											<li><a href="">(391) 29-29-456</a></li>
+											<li><a href="">(391) 29-29-456</a></li>
+											<li><a href="">(391) 29-29-456</a></li>
+										</ul>
+									</div>									
+								</div>
+								<div class="b-header-delivery">
+									<div class="b-header-delivery__ico"></div>
+									<div class="b-header-delivery__right">
+										<span>Доставка в: </span>
+										<select class="b-header-delivery-select">
+											<option value="">Красноярск</option>
+											<option value="">Красноярск</option>
+											<option value="">Красноярск</option>
+											<option value="">Красноярск</option>
+										</select>
+									</div>
+								</div>
+								<div class="b-header-cart">
+									<div class="b-header-cart__left">
+										<span>товаров</span>
+										<b>5 428 руб</b>
+									</div>
+									<div class="b-header-cart__ico">
+										<div class="b-header-cart__n">99</div>
+									</div>
+								</div>
+							</div>
+							<div class="b-mobile">
+							    <div class="menu-icon">
+							        <div class="menu-icon__wrapper">
+							            <span class="b-menu__icon">
+							                <i class="b-menu__line b-menu__line_1"></i>
+							                <i class="b-menu__line b-menu__line_2"></i>
+							                <i class="b-menu__line b-menu__line_3"></i>
+							            </span>
+							        </div>
+							    </div> 
+							</div>							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- end b-header -->
+	
+	<div class="b-about-page">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xl">
+					<span class="b-content-title">
+						<h1>О НАС</h1>
+					</span>
+				</div>
+			</div>
+		</div>
+		<div class="b-breadcreambs">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-xl">
+						<div class="b-breadcreambs-content">
+							<ul>
+								<li><a href="">Главная</a><i>/</i></li>
+								<li><a href="">О нас</a><i>/</i></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid">
+			<div class="b-about-slider">
+				<div class="row">
+					<div class="b-about-slider__col col-xl-4 col-lg-4 col-md-6 col-sm-6">
+						<div class="b-about-slider__block">
+							<div class="b-about-slider__block__big">
+								<img src="images/b-about-slider__img.jpg" alt="">
+							</div>
+							<div class="b-about-slider__wrap">
+								<div class="b-about-slider__item">
+									<img src="images/b-about-slider__img2.jpg" alt="">
+								</div>
+								<div class="b-about-slider__item">
+									<img src="images/b-about-slider__img3.jpg" alt="">
+								</div>								
+							</div>
+						</div>
+					</div>
+					<div class="b-about-slider__col col-xl-4 col-lg-4 col-md-6 col-sm-6">
+						<div class="b-about-slider__block">
+							<div class="b-about-slider__wrap">
+								<div class="b-about-slider__item">
+									<img src="images/b-about-slider__img4.jpg" alt="">
+								</div>
+								<div class="b-about-slider__item">
+									<img src="images/b-about-slider__img5.jpg" alt="">
+								</div>								
+							</div>
+							<div class="b-about-slider__block__big">
+								<img src="images/b-about-slider__img6.jpg" alt="">
+							</div>							
+						</div>
+					</div>
+					<div class="b-about-slider__col col-xl-4 col-lg-4 col-md-6 col-sm-6">
+						<div class="b-about-slider__block">
+							<div class="b-about-slider__block__big">
+								<img src="images/b-about-slider__img7.jpg" alt="">
+							</div>
+							<div class="b-about-slider__wrap">
+								<div class="b-about-slider__item">
+									<img src="images/b-about-slider__img8.jpg" alt="">
+								</div>
+								<div class="b-about-slider__item">
+									<img src="images/b-about-slider__img9.jpg" alt="">
+								</div>								
+							</div>
+						</div>
+					</div>
+					<div class="b-about-slider__col col-xl-4 col-lg-4 col-md-6 col-sm-6">
+						<div class="b-about-slider__block">
+							<div class="b-about-slider__block__big">
+								<img src="images/b-about-slider__img.jpg" alt="">
+							</div>
+							<div class="b-about-slider__wrap">
+								<div class="b-about-slider__item">
+									<img src="images/b-about-slider__img2.jpg" alt="">
+								</div>
+								<div class="b-about-slider__item">
+									<img src="images/b-about-slider__img3.jpg" alt="">
+								</div>								
+							</div>
+						</div>
+					</div>
+					<div class="b-about-slider__col col-xl-4 col-lg-4 col-md-6 col-sm-6">
+						<div class="b-about-slider__block">
+							<div class="b-about-slider__wrap">
+								<div class="b-about-slider__item">
+									<img src="images/b-about-slider__img4.jpg" alt="">
+								</div>
+								<div class="b-about-slider__item">
+									<img src="images/b-about-slider__img5.jpg" alt="">
+								</div>								
+							</div>
+							<div class="b-about-slider__block__big">
+								<img src="images/b-about-slider__img6.jpg" alt="">
+							</div>							
+						</div>
+					</div>
+					<div class="b-about-slider__col col-xl-4 col-lg-4 col-md-6 col-sm-6">
+						<div class="b-about-slider__block">
+							<div class="b-about-slider__block__big">
+								<img src="images/b-about-slider__img7.jpg" alt="">
+							</div>
+							<div class="b-about-slider__wrap">
+								<div class="b-about-slider__item">
+									<img src="images/b-about-slider__img8.jpg" alt="">
+								</div>
+								<div class="b-about-slider__item">
+									<img src="images/b-about-slider__img9.jpg" alt="">
+								</div>								
+							</div>
+						</div>
+					</div>					
+
+				</div>
+			</div>
+			<div class="b-about-content">
+				<div class="b-about-left">
+					<div class="b-about-left__text">
+						<h2>Компания Ветка Сакуры - служба доставки цветов и подарков Вашим близким в 
+						Красноярске </h2>
+						<p>Мы работаем с лучшими поставщиками и предлагаем композиции только из свежих цветов, которые находятся на складе не более трех дней. Наши менеджеры всегда помогут Вам с выбором. Оформить заказ или получить консультацию Вы можете через сайт, онлайн-консультанта, по телефону или почту. Также Вы можете заказать обратный звонок, и наши менеджеры перезвонят Вам через 5-15 минут. Основная цель нашей компании - помогать Вам делать Ваших близких счастливее.</p>
+					</div>
+					<div class="b-advantages-right">
+						<div class="b-advantages-item">
+							<div class="b-advantages-item__img">
+								<img src="images/b-advantages-item__img.svg" alt="">
+							</div>
+							<div class="b-advantages-item__text">
+								<p>Быстрая <br/>
+								доставка
+								</p>
+							</div>
+						</div>
+						<div class="b-advantages-item">
+							<div class="b-advantages-item__img">
+								<img src="images/b-advantages-item__img2.svg" alt="">
+							</div>
+							<div class="b-advantages-item__text">
+								<p>Всегда <br/>
+								свежие цветы</p>
+							</div>
+						</div>
+						<div class="b-advantages-item">
+							<div class="b-advantages-item__img">
+								<img src="images/b-advantages-item__img3.svg" alt="">
+							</div>
+							<div class="b-advantages-item__text">
+								<p>Букет на <br/>
+								любой вкус</p>
+							</div>
+						</div>
+						<div class="b-advantages-item">
+							<div class="b-advantages-item__img">
+								<img src="images/b-advantages-item__img4.svg" alt="">
+							</div>
+							<div class="b-advantages-item__text">
+								<p>Филиалы по <br/>
+								всему городу</p>
+							</div>
+						</div>																								
+					</div>		
+					<div class="b-about-left__text">
+						<h2>Купить готовые букеты цветов</h2>
+						<p>Сюда могут входить самые разные растения, от привычных роз до хризантем, гербер и даже орхидей. Все зависит от ваших предпочтений. К тому же мы предлагаем несколько вариантов готовых букетов. В каталоге вы можете выбрать цветы на заказ с доставкой в Красноярске трех вариантов: «стандарт», «медиум», «премиум». Композиции отличаются размерами и количеством растений, соответственно, разной будет и цена. Вам легко подобрать и купить букет цветов с учетом своего бюджета.</p>
+					</div>								
+				</div>
+				<div class="b-about-right">
+					<ul>
+						<li>
+							<a href="">
+								<span class="b-about-ico"><img src="images/b-about-ico.svg" alt=""></span>
+								Реквизиты
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<span class="b-about-ico"><img src="images/b-about-ico2.svg" alt=""></span>
+								Покупателям
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<span class="b-about-ico"><img src="images/b-about-ico3.svg" alt=""></span>
+								Отзывы
+							</a>
+						</li>	
+						<li>
+							<a href="">
+								<span class="b-about-ico"><img src="images/b-about-ico4.svg" alt=""></span>
+								Награды
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<span class="b-about-ico"><img src="images/b-about-ico5.svg" alt=""></span>
+								Партнерам
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<span class="b-about-ico"><img src="images/b-about-ico6.svg" alt=""></span>
+								Персональные данные
+							</a>
+						</li>																		
+					</ul>
+				</div>
+			</div>
+			<div class="b-result">
+				<div class="b-result-item">
+					<div class="b-result-item__ico">
+						<img src="images/bouquet.svg" alt="">
+					</div>
+					<div class="b-result-item__text">
+						<span>Сделано букетов</span>
+						<b>+100 000</b>
+					</div>
+				</div>
+				<div class="b-result-item">
+					<div class="b-result-item__ico">
+						<img src="images/rose.svg" alt="">
+					</div>
+					<div class="b-result-item__text">
+						<span>Продано роз</span>
+						<b>+120 000</b>
+					</div>
+				</div>
+				<div class="b-result-item">
+					<div class="b-result-item__ico">
+						<img src="images/automobile.svg" alt="">
+					</div>
+					<div class="b-result-item__text">
+						<span>Сделано доставок</span>
+						<b>+8 000</b>
+					</div>
+				</div>
+				<div class="b-result-item">
+					<div class="b-result-item__ico">
+						<img src="images/flowers2.svg" alt="">
+					</div>
+					<div class="b-result-item__text">
+						<span>Сделано свадебных букетов</span>
+						<b>+4 500</b>
+					</div>
+				</div>												
+			</div>
+
+			<div class="b-specialist">
+				<div class="b-title">
+					<h3 class="b-title-text">Наши специалисты</h3>
+				</div>
+				<div class="b-specialist-slider">
+					<div class="row">
+						<div class="b-specialist-col col-xl-2 col-lg-2 col-md-4 col-sm-6">
+							<div class="b-specialist-item">
+								<div class="b-specialist-item__img">
+									<img src="images/b-specialist-item__img.jpg" alt="">
+								</div>
+								<div class="b-specialist-item__text">
+									<b>Имя Фамилия</b>
+									<span>Название филиала</span>
+								</div>
+							</div>
+						</div>
+						<div class="b-specialist-col col-xl-2 col-lg-2 col-md-4 col-sm-6">
+							<div class="b-specialist-item">
+								<div class="b-specialist-item__img">
+									<img src="images/b-specialist-item__img2.jpg" alt="">
+								</div>
+								<div class="b-specialist-item__text">
+									<b>Имя Фамилия</b>
+									<span>Название филиала</span>
+								</div>
+							</div>
+						</div>	
+						<div class="b-specialist-col col-xl-2 col-lg-2 col-md-4 col-sm-6">
+							<div class="b-specialist-item">
+								<div class="b-specialist-item__img">
+									<img src="images/b-specialist-item__img.jpg" alt="">
+								</div>
+								<div class="b-specialist-item__text">
+									<b>Имя Фамилия</b>
+									<span>Название филиала</span>
+								</div>
+							</div>
+						</div>
+						<div class="b-specialist-col col-xl-2 col-lg-2 col-md-4 col-sm-6">
+							<div class="b-specialist-item">
+								<div class="b-specialist-item__img">
+									<img src="images/b-specialist-item__img2.jpg" alt="">
+								</div>
+								<div class="b-specialist-item__text">
+									<b>Имя Фамилия</b>
+									<span>Название филиала</span>
+								</div>
+							</div>
+						</div>	
+						<div class="b-specialist-col col-xl-2 col-lg-2 col-md-4 col-sm-6">
+							<div class="b-specialist-item">
+								<div class="b-specialist-item__img">
+									<img src="images/b-specialist-item__img.jpg" alt="">
+								</div>
+								<div class="b-specialist-item__text">
+									<b>Имя Фамилия</b>
+									<span>Название филиала</span>
+								</div>
+							</div>
+						</div>
+						<div class="b-specialist-col col-xl-2 col-lg-2 col-md-4 col-sm-6">
+							<div class="b-specialist-item">
+								<div class="b-specialist-item__img">
+									<img src="images/b-specialist-item__img2.jpg" alt="">
+								</div>
+								<div class="b-specialist-item__text">
+									<b>Имя Фамилия</b>
+									<span>Название филиала</span>
+								</div>
+							</div>
+						</div>
+						<div class="b-specialist-col col-xl-2 col-lg-2 col-md-4 col-sm-6">
+							<div class="b-specialist-item">
+								<div class="b-specialist-item__img">
+									<img src="images/b-specialist-item__img.jpg" alt="">
+								</div>
+								<div class="b-specialist-item__text">
+									<b>Имя Фамилия</b>
+									<span>Название филиала</span>
+								</div>
+							</div>
+						</div>
+						<div class="b-specialist-col col-xl-2 col-lg-2 col-md-4 col-sm-6">
+							<div class="b-specialist-item">
+								<div class="b-specialist-item__img">
+									<img src="images/b-specialist-item__img2.jpg" alt="">
+								</div>
+								<div class="b-specialist-item__text">
+									<b>Имя Фамилия</b>
+									<span>Название филиала</span>
+								</div>
+							</div>
+						</div>	
+						<div class="b-specialist-col col-xl-2 col-lg-2 col-md-4 col-sm-6">
+							<div class="b-specialist-item">
+								<div class="b-specialist-item__img">
+									<img src="images/b-specialist-item__img.jpg" alt="">
+								</div>
+								<div class="b-specialist-item__text">
+									<b>Имя Фамилия</b>
+									<span>Название филиала</span>
+								</div>
+							</div>
+						</div>
+						<div class="b-specialist-col col-xl-2 col-lg-2 col-md-4 col-sm-6">
+							<div class="b-specialist-item">
+								<div class="b-specialist-item__img">
+									<img src="images/b-specialist-item__img2.jpg" alt="">
+								</div>
+								<div class="b-specialist-item__text">
+									<b>Имя Фамилия</b>
+									<span>Название филиала</span>
+								</div>
+							</div>
+						</div>	
+						<div class="b-specialist-col col-xl-2 col-lg-2 col-md-4 col-sm-6">
+							<div class="b-specialist-item">
+								<div class="b-specialist-item__img">
+									<img src="images/b-specialist-item__img.jpg" alt="">
+								</div>
+								<div class="b-specialist-item__text">
+									<b>Имя Фамилия</b>
+									<span>Название филиала</span>
+								</div>
+							</div>
+						</div>
+						<div class="b-specialist-col col-xl-2 col-lg-2 col-md-4 col-sm-6">
+							<div class="b-specialist-item">
+								<div class="b-specialist-item__img">
+									<img src="images/b-specialist-item__img2.jpg" alt="">
+								</div>
+								<div class="b-specialist-item__text">
+									<b>Имя Фамилия</b>
+									<span>Название филиала</span>
+								</div>
+							</div>
+						</div>																								
+					</div>
+				</div>
+			</div>
+
+			<div class="b-partners">
+				<div class="b-title">
+					<h3 class="b-title-text">Наши партнеры</h3>
+				</div>
+				<div class="b-partners-content">
+					<div class="b-partners-col">
+						<div class="b-partners-item">
+							<img src="images/b-partners-item__img.png" alt="">
+						</div>	
+					</div>
+					<div class="b-partners-col">
+						<div class="b-partners-item">
+							<img src="images/b-partners-item__img2.png" alt="">
+						</div>	
+					</div>	
+					<div class="b-partners-col">
+						<div class="b-partners-item">
+							<img src="images/b-partners-item__img.png" alt="">
+						</div>	
+					</div>
+					<div class="b-partners-col">
+						<div class="b-partners-item">
+							<img src="images/b-partners-item__img2.png" alt="">
+						</div>	
+					</div>	
+					<div class="b-partners-col">
+						<div class="b-partners-item">
+							<img src="images/b-partners-item__img.png" alt="">
+						</div>	
+					</div>
+					<div class="b-partners-col">
+						<div class="b-partners-item">
+							<img src="images/b-partners-item__img2.png" alt="">
+						</div>	
+					</div>	
+					<div class="b-partners-col">
+						<div class="b-partners-item">
+							<img src="images/b-partners-item__img.png" alt="">
+						</div>	
+					</div>
+					<div class="b-partners-col">
+						<div class="b-partners-item">
+							<img src="images/b-partners-item__img2.png" alt="">
+						</div>	
+					</div>																				
+				</div>
+			</div>	
+			
+			<div class="b-video">
+				<div class="b-title">
+					<h3 class="b-title-text">Видео о нас</h3>
+				</div>
+				<div class="b-video-slider">
+					<div class="row">
+						<div class="b-video-col col-xl-4 col-lg-4 col-md-6 col-sm-6">
+							<div class="b-video-slider__item">
+								<img src="images/b-video-slider__img.jpg" alt="">
+								<div class="b-video-slider__item__wrap">
+									<button class="btn-play"></button>
+								</div>
+							</div>
+						</div>
+						<div class="b-video-col col-xl-4 col-lg-4 col-md-6 col-sm-6">
+							<div class="b-video-slider__item">
+								<img src="images/b-video-slider__img.jpg" alt="">
+								<div class="b-video-slider__item__wrap">
+									<button class="btn-play"></button>
+								</div>
+							</div>
+						</div>
+						<div class="b-video-col col-xl-4 col-lg-4 col-md-6 col-sm-6">
+							<div class="b-video-slider__item">
+								<img src="images/b-video-slider__img.jpg" alt="">
+								<div class="b-video-slider__item__wrap">
+									<button class="btn-play"></button>
+								</div>
+							</div>
+						</div>
+						<div class="b-video-col col-xl-4 col-lg-4 col-md-6 col-sm-6">
+							<div class="b-video-slider__item">
+								<img src="images/b-video-slider__img.jpg" alt="">
+								<div class="b-video-slider__item__wrap">
+									<button class="btn-play"></button>
+								</div>
+							</div>
+						</div>
+						<div class="b-video-col col-xl-4 col-lg-4 col-md-6 col-sm-6">
+							<div class="b-video-slider__item">
+								<img src="images/b-video-slider__img.jpg" alt="">
+								<div class="b-video-slider__item__wrap">
+									<button class="btn-play"></button>
+								</div>
+							</div>
+						</div>
+						<div class="b-video-col col-xl-4 col-lg-4 col-md-6 col-sm-6">
+							<div class="b-video-slider__item">
+								<img src="images/b-video-slider__img.jpg" alt="">
+								<div class="b-video-slider__item__wrap">
+									<button class="btn-play"></button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+
+
+	<!-- begin b-footer -->
+	<footer class="b-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-xl">
+					<div class="b-footer-content">
+						<div class="b-footer-left">
+							<div class="b-footer-list">
+								<b class="b-footer-title">Каталог букетов</b>
+								<ul>
+									<li><a href="">Букеты</a></li>
+									<li><a href="">Хиты продаж</a></li>
+									<li><a href="">Подарочные корзины</a></li>
+									<li><a href="">Цветы в коробках</a></li>
+									<li><a href="">Аренда растений</a></li>
+									<li><a href="">Акции</a></li>
+								</ul>
+							</div>
+							<div class="b-footer-list">
+								<b class="b-footer-title">О компании</b>
+								<ul>
+									<li><a href="">Отзывы</a></li>
+									<li><a href="">Фотогалерея</a></li>
+									<li><a href="">Награды и благодарности</a></li>
+									<li><a href="">Партнеры</a></li>
+									<li><a href="">Информация для размещения</a></li>
+									<li><a href="">Реквизиты</a></li>
+									<li><a href="">Персональные данные</a></li>
+								</ul>
+							</div>
+							<div class="b-footer-list">
+								<b class="b-footer-title">Покупателям</b>
+								<ul>
+									<li><a href="">Как заказать</a></li>
+									<li><a href="">Оплата</a></li>
+									<li><a href="">Доставка</a></li>
+									<li><a href="">Как оплатить VISA, Mastercard</a></li>
+									<li><a href="">Отмена заказа</a></li>
+									<li><a href="">Промо-коды</a></li>
+									<li><a href="">Корпоративным клиентам</a></li>
+								</ul>
+							</div>
+							<div class="b-footer-list">
+								<b class="b-footer-title"></b>
+								<ul>
+									<li><a href="">События</a></li>
+									<li><a href="">Полезное</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="b-footer-right">
+							<div class="b-footer-contacts">
+								<b class="b-footer-title">Контакты</b>
+								<div class="b-footer-contacts__item">
+									<div class="b-footer-contacts__item__ico"><img src="images/tel-ico.png" alt=""></div>
+									<div class="b-footer-contacts__item__text">
+										<a href="">(391) 29-29-456</a>
+										<a href="">(391) 29-45-205</a>
+										<a href="">(391) 251-81-51</a>
+									</div>
+								</div>
+								<button class="btn-callback btn-red" data-toggle="modal" data-target="#modal-callback">Обратный звонок</button>
+							</div>
+							<div class="b-footer-wrap">
+								<div class="b-footer-block">
+									<div class="b-footer-block__img">
+										<img src="images/b-footer-block__img.png" alt="">
+									</div>
+									<div class="b-footer-block__text">
+										<p>Пер. Сибирский, 5А</p>
+										<p>Пер. Сибирский, 5А</p>
+										<p>Аэропорт Емельяново 
+										Терминал 3 (зона прибытия)</p>
+									</div>
+								</div>
+								<div class="b-footer-block">
+									<div class="b-footer-block__img">
+										<img src="images/b-footer-block__img2.png" alt="">
+									</div>
+									<div class="b-footer-block__text">
+										<p><b>с 9:00 до 22:00 </b></p>
+									</div>
+								</div>							
+							</div>
+						</div>						
+					</div>
+					<div class="b-footer-bottom">
+						<ul>
+							<li><img src="images/rbk.png" alt=""></li>
+							<li><img src="images/mastercard.png" alt=""></li>
+							<li><img src="images/visa.png" alt=""></li>
+						</ul>
+						<p>Заказать букет, заказ цветов, Цветы в Красноярске, Букет цветов, Розы в Красноярске</p>
+						<p>Ветка Сакуры - Салон флористики 2017-2019 г.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- end b-footer -->
+</div>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBv9-H5GwlZA4EkUorU0gGHrq0H4pFMPS4"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/jquery-ui.js"></script>
+	<script src="js/jquery.ui.datepicker-ru.js"></script>
+	<script src="js/fontawesome.min.js"></script>
+	<script src="js/jquery.inputmask.js"></script>
+	<script src="js/jquery.fancybox.min.js"></script>
+	<script src="js/jquery.formstyler.min.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>

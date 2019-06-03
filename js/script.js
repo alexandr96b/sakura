@@ -1,5 +1,19 @@
 $(document).ready(function () {
 
+
+$(".b-card-size ul li").click(function(e) {
+  e.preventDefault();
+  $(".b-card-size ul li").removeClass('active');
+  $(this).addClass('active');
+})
+
+
+$(".b-input-tel").inputmask("+7(999)999-99-99");
+
+$('select').styler({
+  selectSearch: true,
+});
+
 $('.b-main-next').on("click", function() {
     $('.b-main-slider').slick("slickNext"); 
 })
@@ -77,6 +91,15 @@ $('.b-reviews-slider > .row').slick({
 ]
 });
 
+
+
+
+$('.b-contacts-top a').click(function(e){
+  $('.b-filters-wrapper').toggleClass('active');
+  $(this).toggleClass('active');
+  e.preventDefault();
+});
+
 $('.phone-top__ico').click(function(){
   $('.phone-drop1').toggleClass('active');
   $(this).toggleClass('active');
@@ -145,6 +168,13 @@ $(document).on('click', function(e) {
 
 
 
+/*$('.b-contacts-item__ico').click(function(){
+  $(this).parent().toggleClass('active');
+});
+*/
+
+
+
 $('.b-card-slider__big').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
@@ -195,14 +225,14 @@ $('.b-card-slider__pager').slick({
     {
       breakpoint: 1200,
       settings: {
-        slidesToShow: 3,
+        slidesToShow: 2,
         slidesToScroll: 1
       }
     },
     {
       breakpoint: 992,
       settings: {
-        slidesToShow: 3,
+        slidesToShow: 2,
         slidesToScroll: 1
       }
     },
@@ -210,6 +240,8 @@ $('.b-card-slider__pager').slick({
       breakpoint: 768,
       settings: {
         slidesToShow: 2,
+        verticalSwiping: false,
+        vertical: false,        
         slidesToScroll: 1
       }
     }
@@ -248,44 +280,149 @@ function init() {
         // This is where you would paste any style found on Snazzy Maps.
         styles: [
     {
-        "featureType": "road",
-        "elementType": "geometry",
-        "stylers": [
-            {
-                "lightness": 100
-            },
-            {
-                "visibility": "simplified"
-            }
-        ]
-    },
-    {
-        "featureType": "water",
-        "elementType": "geometry",
+        "featureType": "administrative",
+        "elementType": "all",
         "stylers": [
             {
                 "visibility": "on"
             },
             {
-                "color": "#C6E2FF"
+                "lightness": 33
             }
         ]
     },
     {
-        "featureType": "poi",
-        "elementType": "geometry.fill",
+        "featureType": "landscape",
+        "elementType": "all",
         "stylers": [
             {
-                "color": "#C5E3BF"
+                "color": "#f7f7f7"
+            }
+        ]
+    },
+    {
+        "featureType": "poi.business",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "poi.park",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#deecdb"
+            }
+        ]
+    },
+    {
+        "featureType": "poi.park",
+        "elementType": "labels",
+        "stylers": [
+            {
+                "visibility": "on"
+            },
+            {
+                "lightness": "25"
             }
         ]
     },
     {
         "featureType": "road",
-        "elementType": "geometry.fill",
+        "elementType": "all",
         "stylers": [
             {
-                "color": "#D1D1B8"
+                "lightness": "25"
+            }
+        ]
+    },
+    {
+        "featureType": "road",
+        "elementType": "labels.icon",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "road.highway",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#ffffff"
+            }
+        ]
+    },
+    {
+        "featureType": "road.highway",
+        "elementType": "labels",
+        "stylers": [
+            {
+                "saturation": "-90"
+            },
+            {
+                "lightness": "25"
+            }
+        ]
+    },
+    {
+        "featureType": "road.arterial",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "on"
+            }
+        ]
+    },
+    {
+        "featureType": "road.arterial",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#ffffff"
+            }
+        ]
+    },
+    {
+        "featureType": "road.local",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#ffffff"
+            }
+        ]
+    },
+    {
+        "featureType": "transit.line",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "transit.station",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "water",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "on"
+            },
+            {
+                "color": "#e0f1f9"
             }
         ]
     }
@@ -352,14 +489,15 @@ $('.b-products-slider .row').slick({
     {
       breakpoint: 992,
       settings: {
-        slidesToShow: 4,
+        slidesToShow: 3,
         slidesToScroll: 1
       }
     },
     {
       breakpoint: 768,
       settings: {
-        slidesToShow: 2,
+        slidesToShow: 1,
+         adaptiveHeight: true,
         slidesToScroll: 1
       }
     }
@@ -371,6 +509,122 @@ $('.b-products-slider .row').slick({
 
 $( "#datepicker" ).datepicker();
 
+
+$('.b-about-slider .row').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  arrows: true,
+  dots: false,
+  focusOnSelect: true,
+  variableWidth: false,
+  responsive: [
+    {
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
+
+
+$('.b-specialist-slider .row').slick({
+  slidesToShow: 6,
+  slidesToScroll: 1,
+  fade: false,
+  variableWidth: false,
+  adaptiveHeight: true,
+  arrows: true,
+  responsive: [
+  {
+    breakpoint: 1200,
+    settings: {
+      slidesToShow: 6,
+      slidesToScroll: 1
+    }
+  },
+  {
+    breakpoint: 992,
+    settings: {
+      slidesToShow: 3,
+      slidesToScroll: 1
+    }
+  },
+  {
+    breakpoint: 768,
+    settings: {
+      slidesToShow: 2,   
+      slidesToScroll: 1
+    }
+  }
+  // You can unslick at a given breakpoint now by adding:
+  // settings: "unslick"
+  // instead of a settings object
+]
+});
+
+$('.b-video-slider .row').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  fade: false,
+  variableWidth: false,
+  adaptiveHeight: true,
+  arrows: true,
+  responsive: [
+  {
+    breakpoint: 1200,
+    settings: {
+      slidesToShow: 3,
+      slidesToScroll: 1
+    }
+  },
+  {
+    breakpoint: 992,
+    settings: {
+      slidesToShow: 2,
+      slidesToScroll: 1
+    }
+  },
+  {
+    breakpoint: 768,
+    settings: {
+      slidesToShow: 1,  
+      slidesToScroll: 1
+    }
+  }
+  // You can unslick at a given breakpoint now by adding:
+  // settings: "unslick"
+  // instead of a settings object
+]
+});
+
+
+$('.b-article-slider').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  fade: false,
+  variableWidth: false,
+  adaptiveHeight: true,
+  arrows: true,
+});
 
 
 $(".b-main-left__bottom a").click(function (event) {
@@ -438,21 +692,18 @@ $('.b-partners-slider').slick({
 
 
 $('.b-foto-slider').slick({
-  slidesToShow: 1,
+  slidesToShow: 3,
   slidesToScroll: 1,
   fade: false,
-  centerMode: true,
   variableWidth: true,
   adaptiveHeight: true,
   arrows: true,
-  nextArrow: '<button class="b-arrow b-arrow__next">→</button>',
-  prevArrow: '<button class="b-arrow b-arrow__prev">←</button>',
   focusOnSelect: true,
   responsive: [
   {
     breakpoint: 1200,
     settings: {
-      slidesToShow: 1,
+      slidesToShow: 3,
       slidesToScroll: 1
     }
   },
@@ -465,223 +716,18 @@ $('.b-foto-slider').slick({
   },
   {
     breakpoint: 768,
-    settings: {
-      slidesToShow: 1,
-      variableWidth: false,
-      centerMode: false,
-      adaptiveHeight: false,      
-      slidesToScroll: 1
-    }
-  }
-  // You can unslick at a given breakpoint now by adding:
-  // settings: "unslick"
-  // instead of a settings object
-]
-});
-
-$('.b-about-slider').slick({
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  fade: false,
-  centerMode: true,
-  variableWidth: true,
-  adaptiveHeight: true,
-  arrows: true,
-  nextArrow: '<button class="b-arrow b-arrow__next">→</button>',
-  prevArrow: '<button class="b-arrow b-arrow__prev">←</button>',
-  focusOnSelect: true,
-  responsive: [
-  {
-    breakpoint: 1560,
     settings: {
       slidesToShow: 1,     
       slidesToScroll: 1
     }
-  },
-  {
-    breakpoint: 1200,
-    settings: {
-      slidesToShow: 1,
-      slidesToScroll: 1
-    }
-  },
-  {
-    breakpoint: 992,
-    settings: {
-      slidesToShow: 1,
-      slidesToScroll: 1
-    }
-  },
-  {
-    breakpoint: 768,
-    settings: {
-      slidesToShow: 1,
-      variableWidth: false,
-      centerMode: false,
-      adaptiveHeight: false,      
-      slidesToScroll: 1
-    }
   }
   // You can unslick at a given breakpoint now by adding:
   // settings: "unslick"
   // instead of a settings object
 ]
 });
-
-
-
-
-$('.b-prepack-slider__big').slick({
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  fade: false,
-  arrows: false,
-  asNavFor: '.b-prepack-slider__pager',
-  responsive: [
-  {
-    breakpoint: 1200,
-    settings: {
-      slidesToShow: 1,
-      slidesToScroll: 1
-    }
-  },
-  {
-    breakpoint: 992,
-    settings: {
-      slidesToShow: 1,
-      slidesToScroll: 1
-    }
-  },
-  {
-    breakpoint: 768,
-    settings: {
-      slidesToShow: 1,
-      slidesToScroll: 1
-    }
-  }
-  // You can unslick at a given breakpoint now by adding:
-  // settings: "unslick"
-  // instead of a settings object
-]
-});
-$('.b-prepack-slider__pager').slick({
-  slidesToShow: 5,
-  slidesToScroll: 1,
-  arrows: false,
-  dots: false,
-  asNavFor: '.b-prepack-slider__big',
-  focusOnSelect: true,
-  variableWidth: true,
-  responsive: [
-    {
-      breakpoint: 1200,
-      settings: {
-        slidesToShow: 4,
-        slidesToScroll: 1
-      }
-    },
-    {
-      breakpoint: 992,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 1
-      }
-    },
-    {
-      breakpoint: 768,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 1
-      }
-    }
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
-  ]
-});
-
-
-
-$('.validate').each(function() {
-    $(this).validate({
-
-    rules: {
-        name: {
-            required: true
-        },
-        password: {
-            required: true
-        },
-        rep_password: {
-            required: true
-        },                
-        email: {
-            required: true,
-            email: true
-        },
-        phone: {
-            required: true,
-            minlength: 10
-        },
-  check: {
-    required: true
-  }
-    },
-    messages: {
-        name: {
-            required: "Заполните ваше имя"
-        },
-        email: {
-            required: "Электронная почта обязательна к заполнению",
-            email: "Введите корректную электронную почту"
-        },
-        password: {
-            required: "Электронная почта обязательна к заполнению",
-            password: "Введите пароль"
-        },
-        rep_password: {
-            required: "Электронная почта обязательна к заполнению",
-            rep_password: "Введите пароль"
-        },                
-        phone: {
-            required: "Ваш номер телефона обязателен к заполнению",
-    minlength: $.validator.format( "В номере телефона должно быть 10 цифр." ),
-        },
-        check: {
-            required: "Пожалуйста, поставьте галочку соглашения с нашей политикой конфиденциальности"
-        }
-    },
-errorPlacement: function(error, input) {
-  error.insertBefore(input);
-}
-});
-$.extend( $.validator.messages, {
-      required: "Это поле необходимо заполнить.",
-      remote: "Пожалуйста, введите правильное значение.",
-      email: "Пожалуйста, введите корректный адрес электронной почты.",
-      url: "Пожалуйста, введите корректный URL.",
-      date: "Пожалуйста, введите корректную дату.",
-      dateISO: "Пожалуйста, введите корректную дату в формате ISO.",
-      number: "Пожалуйста, введите число.",
-      digits: "Пожалуйста, вводите только цифры.",
-      creditcard: "Пожалуйста, введите правильный номер кредитной карты.",
-      equalTo: "Пожалуйста, введите такое же значение ещё раз.",
-      extension: "Пожалуйста, выберите файл с правильным расширением.",
-      maxlength: $.validator.format( "Пожалуйста, введите не больше {0} символов." ),
-      minlength: $.validator.format( "Пожалуйста, введите не меньше {0} символов." ),
-      rangelength: $.validator.format( "Пожалуйста, введите значение длиной от {0} до {1} символов." ),
-      range: $.validator.format( "Пожалуйста, введите число от {0} до {1}." ),
-      max: $.validator.format( "Пожалуйста, введите число, меньшее или равное {0}." ),
-      min: $.validator.format( "Пожалуйста, введите число, большее или равное {0}." )
-    });
-});
-
-
-
 
  
-
-
 
 
 
@@ -714,6 +760,5 @@ $(window).resize(function(){
 
 
 });
-
 
 
