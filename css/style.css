@@ -2873,7 +2873,7 @@ h1{
 	line-height: 32px;
 	font-weight: 400;
 	text-transform: uppercase;	
-	margin: 0 0 30px 0;
+	margin: 0 !important;
 }
 .b-cart-top{
 	display: flex;
@@ -4351,6 +4351,7 @@ h1{
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 24px;
+	margin: 30px 0;
 }
 
 .b-article b{
@@ -4392,6 +4393,38 @@ h1{
 	color: #db5959;
 	text-decoration: underline;
 }
+
+blockquote{
+	background: #faf9f7;
+	border-left: 2px solid #7f9925;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 20px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 30px 0 30px 30px;
+	display: block;
+}
+blockquote p{
+	margin: 0;
+}
+blockquote span{
+	display: block;
+	color: #7f9925;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 19px;
+	margin: 0 0 13px 0;	
+} 
+blockquote p a{
+	color: #db5959;
+	text-decoration: underline;
+}
+
+
+
 .b-article-tit{
 	font-family: 'Marmelad', sans-serif;
 	color: #3c3834;
@@ -4409,14 +4442,14 @@ h1{
 	line-height: 26px;	
 	margin: 0 0 25px 0;
 }
-.b-article .b-article-list ul{
+.b-article > ul{
 	padding: 0 0 0 30px;
 	margin: 30px 0;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
-.b-article .b-article-list ul li{
+.b-article > ul > li{
 	list-style: none;
 	display: flex;
 	justify-content: flex-start;
@@ -4427,17 +4460,14 @@ h1{
 	line-height: 24px;
 	margin: 0 0 20px 0;	
 }
-.b-article .b-article-list ul li b{
+.b-article > ul > li > b{
 	padding: 0 5px 0 0;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	margin: 0;
 }
-.b-article .b-article-list ul li:last-child{
-	margin: 0;
-}
-.b-article .list-circle ul li:before{
+.b-article > ul > li:before{
 	content: "";
 	width: 10px;
 	height: 10px;
@@ -4447,6 +4477,40 @@ h1{
 	margin: 8px 14px 0 0;
 	flex-shrink: 0;
 }
+.b-article ul li:last-child{
+	margin: 0;
+}
+
+.b-article ol{
+	padding: 0 0 0 30px;
+	margin: 30px 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.b-article ol li{
+	color: #3c3834;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 24px;
+	margin: 0 0 20px 0;	
+}
+.b-article ol li span{
+	font-weight: 400;
+	font-size: 16px;
+}
+.b-article ol li b{
+	padding: 0 5px 0 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0;
+}
+.b-article ol li:last-child{
+	margin: 0;
+}
+
+
 .b-article-slider{
 	position: relative;
 	overflow: hidden;
@@ -4516,37 +4580,37 @@ h1{
 
 
 .b-article-table{
-	border-radius: 15px 15px 0px 0px;
-	overflow: hidden;
-	border: 2px solid #faf9f7;
-	margin: 30px 0;
+
 }
-.b-article-table table{
+.b-article table{
 	width: 100%;
+	border-radius: 15px 15px 0px 0px;
+	border: 2px solid #faf9f7;
+	margin: 30px 0;	
 }
-.b-article-table thead tr td{
+.b-article table thead tr td{
 	background: #faf9f7;
 	padding: 10px 0px;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
-.b-article-table tr td:first-child{
+.b-article table tr td:first-child{
 	width: 81%;
 	padding-left: 20px;
 }
-.b-article-table tr td:last-child{
+.b-article table tr td:last-child{
 	padding-right: 20px;
 	text-align: right;
 }
-.b-article-table thead tr td b{
+.b-article table thead tr td b{
 	color: #3c3834;
 	font-size: 16px;
 	line-height: 18px;
 	margin: 0;
 	padding: 0;
 }
-.b-article-table tbody tr td{
+.b-article table tbody tr td{
 	padding: 10px 20px;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -4554,10 +4618,10 @@ h1{
 	border-bottom: 2px solid #faf9f7;
 	border-right: 2px solid #faf9f7;
 }
-.b-article-table tbody tr td:last-child{
+.b-article table tbody tr td:last-child{
 	border-right: none;
 }
-.b-article-table tbody tr td span{
+.b-article table tbody tr td span{
 	color: #3c3834;
 	font-size: 16px;
 	line-height: 20px;
@@ -4710,7 +4774,9 @@ h2{
 	text-transform: none;
 	margin: 0 0 26px 0;
 }
-
+h1{
+	margin: 0 0 30px 0;
+}
 .b-filters-wrapper{
 	display: none;
 }
@@ -4725,7 +4791,7 @@ h3{
     font-size: 20px;
     font-weight: 700;
     line-height: 26px;
-    margin: 0;
+    margin: 0 0 30px 0;
 }
 .b-article h3{
 	margin: 0 0 20px 0;

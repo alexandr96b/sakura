@@ -95,7 +95,7 @@ $('.b-reviews-slider > .row').slick({
 
 
 $('.b-contacts-top a').click(function(e){
-  $('.b-filters-wrapper').toggleClass('active');
+  $('.b-filters-wrapper').slideToggle();
   $(this).toggleClass('active');
   e.preventDefault();
 });
